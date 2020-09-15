@@ -16,12 +16,15 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css'],
-    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     alias: {
-      react: 'preact/compat',
-      'react-dom': 'preact/compat',
+      '@components': path.resolve(__dirname, './src/components'),
+      '@containers': path.resolve(__dirname, './src/containers'),
+      '@utils': path.resolve(__dirname, './src/utils'),
+      '@resources': path.resolve(__dirname, './src/resources'),
+      '@hooks': path.resolve(__dirname, './src/hooks'),
     },
+    extensions: ['.js', '.jsx'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
   module: {
     rules: [
@@ -44,17 +47,18 @@ module.exports = {
     new HTMLPlugin({
       chunks: ['options'],
       filename: 'options.html',
-      title: 'Options page title',
+      title: 'Options',
     }),
     new HTMLPlugin({
       chunks: ['popup'],
       filename: 'popup.html',
     }),
-    new CopyPlugin([
-      { from: './src/_locales/', to: './_locales' },
-      { from: './src/assets', to: './assets' },
-      { from: './src/manifest.json', to: './manifest.json' },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: './src/assets', to: './assets' },
+        { from: './src/manifest.json', to: './manifest.json' },
+      ],
+    }),
     new ExtensionReloader({
       manifest: path.resolve(__dirname, './src/manifest.json'),
     }),

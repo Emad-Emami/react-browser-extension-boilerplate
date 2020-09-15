@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import Example from 'components/Example';
-import defaultTheme from 'themes/default';
+import Example from '@components/Example';
 
 const OptionsPage = () => {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <Example />
-    </ThemeProvider>
-  );
+  return <Example />;
 };
 
 const root = document.createElement('div');

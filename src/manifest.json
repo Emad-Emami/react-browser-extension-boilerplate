@@ -1,10 +1,9 @@
 {
   "manifest_version": 2,
   "version": "1.0.0",
-  "name": "__MSG_appName__",
-  "short_name": "__MSG_appShortName__",
-  "description": "__MSG_appDesc__",
-  "default_locale": "en",
+  "name": "Yocale | Online booking system",
+  "short_name": "Yocale",
+  "description": "Power up your business on autopilot with a true all-in-one free solution.",
   "options_ui": {
     "page": "options.html"
   },
@@ -16,8 +15,8 @@
   },
   "content_scripts": [
     {
-      "all_frames": false,
-      "matches": ["http://*/*", "https://*/*"],
+      "all_frames": true,
+      "matches": ["http://www.yocale.com/*", "https://www.yocale.com/*"],
       "js": ["content.js"]
     }
   ],
