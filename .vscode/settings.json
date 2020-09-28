@@ -1,7 +1,7 @@
 {
   "flow.useNPMPackagedFlow": true,
-  "javascript.validate.enable": false,
   "editor.formatOnSave": true,
+  "javascript.validate.enable": false,
   "files.exclude": {
     "node_modules": true
   },
@@ -92,6 +92,7 @@
     "unmount",
     "watchall",
     "webapp",
+    "webext",
     "woff",
     "yocale’s"
   ],

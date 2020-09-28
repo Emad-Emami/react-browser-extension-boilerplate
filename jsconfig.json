@@ -1,20 +1,19 @@
 {
-    "compilerOptions": {
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "jsx": "react",
-      "checkJs": true,
-      "experimentalDecorators": true,
-      "target": "es2017",
-      "baseUrl": "./",
-      "paths": {
-        "@components/*": ["src/components/*", "src/components/*/index"],
-        "@containers/*": ["src/containers/*", "src/containers/*/index"],
-        "@utils/*": ["src/utils/*", "src/utils/*/index"],
-        "@resources/*": ["src/resources/*", "src/resources/*/index"],
-        "@hooks/*": ["src/hooks/*", "src/hooks/*/index"],
-      }
-    },
-    "typescript.validate.enable": false,
-    "exclude": ["node_modules", "dist"]
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "checkJs": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*", "src/components/*/index"],
+      "@containers/*": ["src/containers/*", "src/containers/*/index"],
+      "@utils/*": ["src/utils/*", "src/utils/*/index"],
+      "@resources/*": ["src/resources/*", "src/resources/*/index"],
+      "@hooks/*": ["src/hooks/*", "src/hooks/*/index"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
 }

@@ -44,7 +44,13 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-query": "^3.4.2",
+    "redux-query-interface-superagent": "^3.4.2",
+    "redux-query-react": "^3.4.2",
     "regenerator-runtime": "^0.13.3",
-    "use-click-outside": "^2.0.0"
+    "use-click-outside": "^2.0.0",
+    "webext-redux": "^2.1.7"
   }
 }

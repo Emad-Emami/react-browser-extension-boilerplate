@@ -40,6 +40,7 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
     ENV: 'readonly',
     include: 'readonly',
+    chrome: 'readonly',
   },
   parserOptions: {
     ecmaFeatures: {

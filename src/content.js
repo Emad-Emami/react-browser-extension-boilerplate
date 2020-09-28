@@ -1,7 +1,7 @@
 import 'libs/polyfills';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Example from '@components/Example';
+// import BlankComponent from '@components/BlankComponent';
 
 const root = document.createElement('div');
 const shadow = root.attachShadow({ mode: 'open' });

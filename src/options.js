@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Example from '@components/Example';
+import BlankComponent from '@components/BlankComponent';
 
 const OptionsPage = () => {
-  return <Example />;
+  return <BlankComponent />;
 };
 
 const root = document.createElement('div');
