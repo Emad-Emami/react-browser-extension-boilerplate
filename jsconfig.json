@@ -12,7 +12,8 @@
       "@containers/*": ["src/containers/*", "src/containers/*/index"],
       "@utils/*": ["src/utils/*", "src/utils/*/index"],
       "@resources/*": ["src/resources/*", "src/resources/*/index"],
-      "@hooks/*": ["src/hooks/*", "src/hooks/*/index"]
+      "@hooks/*": ["src/hooks/*", "src/hooks/*/index"],
+      "@themes/*": ["src/themes/*", "src/themes/*/index"]
     }
   },
   "exclude": ["node_modules", "dist"]

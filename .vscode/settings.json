@@ -12,8 +12,9 @@
     "@components": "${workspaceRoot}/src/components",
     "@containers": "${workspaceRoot}/src/containers",
     "@utils": "${workspaceRoot}/src/utils",
-    "@resources": "${workspaceRoot}/src/resources",
-    "@hooks": "${workspaceRoot}/src/hooks"
+    "@assets": "${workspaceRoot}/src/assets",
+    "@hooks": "${workspaceRoot}/src/hooks",
+    "@themes": "${workspaceRoot}/src/themes"
   },
   "cSpell.words": [
     "Droppable",

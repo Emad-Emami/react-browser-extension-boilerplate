@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { ThemeProvider } from '@material-ui/core/styles';
 import { Provider } from 'react-redux';
+import defaultTheme from '@themes/default';
 import { getQueries } from './configure-store';
 import { Provider as ReduxQueryProvider } from 'redux-query-react';
 import { Store } from 'webext-redux';
@@ -18,7 +20,8 @@ export default function Application({ children }) {
     return (
       <Provider store={store}>
         <ReduxQueryProvider queriesSelector={getQueries}>
-          {children}
+          {/* @TODO: Separate the theme component */}
+          <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>
         </ReduxQueryProvider>
       </Provider>
     );

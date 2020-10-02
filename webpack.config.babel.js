@@ -20,8 +20,9 @@ module.exports = {
       '@components': path.resolve(__dirname, './src/components'),
       '@containers': path.resolve(__dirname, './src/containers'),
       '@utils': path.resolve(__dirname, './src/utils'),
-      '@resources': path.resolve(__dirname, './src/resources'),
+      '@assets': path.resolve(__dirname, './src/assets'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
+      '@themes': path.resolve(__dirname, './src/themes'),
     },
     extensions: ['.js', '.jsx'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
@@ -34,6 +35,14 @@ module.exports = {
         use: [
           {
             loader: 'babel-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
           },
         ],
       },
