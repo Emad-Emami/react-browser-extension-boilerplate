@@ -1,7 +1,10 @@
 import 'libs/polyfills';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { MemoryRouter as Router, Switch, Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import AuthenticatedRoute from '@containers/User/components/AuthenticatedRoute';
+import Dashboard from '@containers/Dashboard';
 import Authentication from '@containers/User/components/Authentication';
 import withApplicationSetup from '@containers/Application/with-Application-setup';
 
@@ -18,7 +21,14 @@ const useStyles = makeStyles(() => ({
 
 const Popup = withApplicationSetup(() => {
   useStyles();
-  return <Authentication />;
+  return (
+    <Router initialEntries={['/']} initialIndex={0}>
+      <Switch>
+        <Route path="/authentication" component={Authentication} />
+        <AuthenticatedRoute path="/" component={Dashboard} />
+      </Switch>
+    </Router>
+  );
 });
 
 const root = document.createElement('div');

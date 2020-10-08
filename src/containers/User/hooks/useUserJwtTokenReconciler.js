@@ -9,7 +9,7 @@ function useUserJwtTokenReconciler() {
   const dispatch = useDispatch();
   const userCookieAuthentication = useUserJwtTokenCookie();
   const userAuthentication = useGetUserAuthentication();
-  console.log(userAuthentication, userCookieAuthentication);
+  // console.log(userAuthentication, userCookieAuthentication);
   const isSynchronized = useMemo(
     () => isEqual(userAuthentication, userCookieAuthentication),
     [userAuthentication, userCookieAuthentication],

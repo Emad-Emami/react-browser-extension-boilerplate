@@ -3,8 +3,8 @@ import useUserJwtTokenReconciler from '@containers/User/hooks/useUserJwtTokenRec
 import PropTypes from 'prop-types';
 
 export default function UserCookieReconciler({ children }) {
-  const isSynchronized = useUserJwtTokenReconciler();
-  console.log({ isSynchronized });
+  /* const isSynchronized =  */ useUserJwtTokenReconciler();
+  // console.log({ isSynchronized });
   return <>{children}</>;
 }
 

@@ -9,10 +9,12 @@ function useCookies(params) {
   };
   const [cookies, setCookies] = useState();
   useEffect(() => {
-    chromeCookies.get({ url, name }, (data) => setCookies(data));
-    chromeCookies.onChanged.addListener(({ cookie }) => {
+    chromeCookies.get({ url, name }, ({ value }) => {
+      setCookies(value);
+    });
+    chromeCookies.onChanged.addListener(({ cookie, removed }) => {
       if (cookie?.name === name) {
-        setCookies(cookie?.value);
+        setCookies(removed ? undefined : cookie?.value);
       }
     });
   }, [url, name]);

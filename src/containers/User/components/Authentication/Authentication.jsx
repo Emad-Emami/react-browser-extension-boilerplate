@@ -5,7 +5,6 @@ import logoSrc from '@assets/img/logo.png';
 import { makeStyles, fade } from '@material-ui/core/styles';
 import { Typography, Button, Link } from '@material-ui/core';
 import DoneOutline from '@material-ui/icons/DoneOutline';
-import useGetUserAuthentication from '@containers/User/hooks/useGetUserAuthentication';
 
 const useStyles = makeStyles(
   ({ spacing, palette, shape }) => ({
@@ -51,11 +50,11 @@ const useStyles = makeStyles(
 
 export default function Authentication({ className }) {
   const classes = useStyles();
-  const userAuthentication = useGetUserAuthentication();
-  console.log(userAuthentication);
   return (
     <div className={clsx(classes.root, className)}>
-      <img src={logoSrc} className={classes.logo} />
+      <a rel="noreferrer" target="_blank" href="https://www.yocale.com">
+        <img src={logoSrc} className={classes.logo} />
+      </a>
       <Typography align="center" variant="body1" color="primary">
         Upgrade Your Business Today
       </Typography>
