@@ -7,10 +7,12 @@ import configureStore, {
   getQueries,
 } from '@containers/Application/configure-store';
 import UserCookieReconciler from '@containers/User/components/UserCookieReconciler';
+import contextMenusCreator from '@scripts/context-menus-creator';
 import { Provider as ReduxQueryProvider } from 'redux-query-react';
 
 const store = configureStore();
 wrapStore(store);
+contextMenusCreator();
 
 export default function BackgroundApplication() {
   return (

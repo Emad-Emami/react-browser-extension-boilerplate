@@ -13,7 +13,8 @@
       "@utils/*": ["src/utils/*", "src/utils/*/index"],
       "@resources/*": ["src/resources/*", "src/resources/*/index"],
       "@hooks/*": ["src/hooks/*", "src/hooks/*/index"],
-      "@themes/*": ["src/themes/*", "src/themes/*/index"]
+      "@themes/*": ["src/themes/*", "src/themes/*/index"],
+      "@scripts/*": ["src/scripts/*", "src/scripts/*/index"]
     }
   },
   "exclude": ["node_modules", "dist"]

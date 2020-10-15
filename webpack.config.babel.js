@@ -23,6 +23,7 @@ module.exports = {
       '@assets': path.resolve(__dirname, './src/assets'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@themes': path.resolve(__dirname, './src/themes'),
+      '@scripts': path.resolve(__dirname, './src/scripts'),
     },
     extensions: ['.js', '.jsx'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],

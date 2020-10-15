@@ -9,8 +9,10 @@ function useCookies(params) {
   };
   const [cookies, setCookies] = useState();
   useEffect(() => {
-    chromeCookies.get({ url, name }, ({ value }) => {
-      setCookies(value);
+    chromeCookies.get({ url, name }, (data) => {
+      if (data?.value) {
+        setCookies(data?.value);
+      }
     });
     chromeCookies.onChanged.addListener(({ cookie, removed }) => {
       if (cookie?.name === name) {

@@ -39,12 +39,16 @@
     "webpack-manifest-version-sync-plugin": "^0.0.3"
   },
   "dependencies": {
+    "@devexpress/dx-react-core": "^2.7.2",
+    "@devexpress/dx-react-scheduler": "^2.7.2",
+    "@devexpress/dx-react-scheduler-material-ui": "^2.7.2",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "clsx": "^1.1.1",
     "core-js": "^3.3.3",
     "lodash-es": "^4.17.15",
+    "luxon": "^1.25.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

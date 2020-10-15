@@ -14,7 +14,8 @@
     "@utils": "${workspaceRoot}/src/utils",
     "@assets": "${workspaceRoot}/src/assets",
     "@hooks": "${workspaceRoot}/src/hooks",
-    "@themes": "${workspaceRoot}/src/themes"
+    "@themes": "${workspaceRoot}/src/themes",
+    "@scripts": "${workspaceRoot}/src/scripts"
   },
   "cSpell.words": [
     "Droppable",
@@ -37,6 +38,7 @@
     "datepicker",
     "debounced",
     "deburr",
+    "devexpress",
     "devtool",
     "devtools",
     "drawer",

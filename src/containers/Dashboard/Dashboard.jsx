@@ -1,10 +1,11 @@
 import React from 'react';
+import Dashboard from './components/Dashboard';
 import PropTypes from 'prop-types';
 
-export default function Dashboard({ children = 'Dashboard' }) {
-  return <div>{children}</div>;
+export default function DashboardWrapper() {
+  return <Dashboard />;
 }
 
-Dashboard.propTypes = {
+DashboardWrapper.propTypes = {
   children: PropTypes.node,
 };
